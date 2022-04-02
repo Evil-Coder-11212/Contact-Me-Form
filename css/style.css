@@ -1,0 +1,109 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root{
+    --primary-color: rgb(26, 26, 26);
+    --secondary-color: rgb(245, 245, 245);
+    --font-family: Nunito, sans-serif;
+    --all-transition:transform ease-in-out 0.3s 0s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+.main-content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(134, 134, 134), -2px -2px 4px rgb(36, 36, 36);
+}
+
+.container>h1{
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.inputs-container{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.inputs-container>label{
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.inputs-container>label>input{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    margin-left: 15px;
+}
+
+.btn-container{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn-container>button{
+    width: 200px;
+    height: 35px;
+    border: none;
+    font-weight: bold;
+    color: var(--secondary-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--all-transition);
+}
+
+/* nth child */
+.inputs-container>labeL>input::placeholder{
+    color: var(--secondary-color);
+}
+
+/* Animations */
+.btn-container>button:hover{
+    transform: scale(1.08);
+}
+
+.btn-container>button:active{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    box-shadow: 2px 2px 4px rgb(134, 134, 134), -2px -2px 4px rgb(36, 36, 36);
+}

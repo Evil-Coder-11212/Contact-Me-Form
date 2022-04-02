@@ -1,0 +1,22 @@
+@media screen and (max-width: 610px){
+  .container{
+      width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .btn-container{
+      flex-direction: column;
+  }
+
+  .btn-container>button{
+      width: 95%;
+      margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .inputs-container>label>input{
+      width: 95%;
+  }
+}
