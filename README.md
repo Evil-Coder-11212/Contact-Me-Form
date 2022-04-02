@@ -1,5 +1,5 @@
 # [Contact Me Form](https://evil-coder-11212.github.io/Contact-Me-Form/)
-Loan Calculator is an web appilcation build with pure HTML, CSS, JS
+Contact Me Form is an web appilcation build with pure HTML, CSS, JS
 
 ## About Me
 I am a regular coder with a bit of gaming.<br/>
